@@ -10,7 +10,16 @@ import bootstrap from './core/bootstrap'
 import '@/permission' // permission control
 import '@/utils/filter' // global filter
 
+// 富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 Vue.config.productionTip = false
+
+// 使用富文本编辑器
+Vue.use(VueQuillEditor)
 
 Vue.use(VueAxios, router)
 
